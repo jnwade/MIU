@@ -1,0 +1,441 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Requester</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />	
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<!--Home Page-->
+	
+	<div data-role="page" id="home" data-theme="a">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Requester</h1>
+			<a href="#info" data-icon="info" data-iconpos="notext" class="ui-btn-right" data-transition="flip">Info</a>
+		</div>
+		
+		<div data-role="content">
+			
+		     <img id="slIcon" src="img/SL_Icon.png"/>
+			         	 
+			 
+			<a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right"  data-transition="slide" data-theme="b" Data-ajax="false">Get Started!</a>
+			<input type="search" name="search" id="search-basic" placeholder="Search" value="" />
+			
+			<div data-role="controlgroup">
+				<a href="#requestList" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide">Request List</a>
+				<a href="#songGenres" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide">Genres</a>
+				<a href="#songs" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide">Songs</a>
+				<a href="#artists" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide">Artists</a>
+				<a href="#learn" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide">Songs to Learn</a>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="a">
+		</div>
+	</div>
+	
+	<!--Add Item Page -->
+	
+	<div data-role="page" id="addSong" data-add-back-btn="true" data-theme="a">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Add Songs</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="a" data-id="footerNav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" Data-ajax="false">Add Song</a></li>
+					<li><a href="#learn" data-transition="slideup">Learn</a></li>
+					<li><a href="#search" data-transition="slideup">Search</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>	
+	</div>
+	
+	<!--Request List Page -->
+	
+	<div data-role="page" id="requestList" data-add-back-btn="true" data-theme="a" class="type-interior">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Request List</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
+		</div>
+		
+		<div data-role="content">
+			<p>Request List Here.</p>
+			<div class="content-primary">	
+				<div data-role="collapsible-set" data-content-theme="b">
+					<div data-role="collapsible">
+						<h3>Request List 1</h3>
+							<ul data-role="listview" data-filter="true" data-split-theme="b" data-split-icon="arrow-r">
+							
+								<li><a href="#request1">
+									<img src="img/beatles.jpg" />
+									<h4>The Beatles</h4>
+									<p>With a little help from my friends</p>
+									</a><a href="#send" data-rel="popup" data-position-to="window" data-transition="pop">Send Request?</a>
+								</li>
+								<li>
+									<img src="img/Bee_Gees.jpg" />
+									<h6>The Bee Gees</h6>
+									<p>Stayin' Alive</p>
+								</li>
+								<li>
+									<img src="img/blondie.jpg" />
+									<h6>Blondie</h6>
+									<p>Heart of Glass</p>
+								</li>
+							</ul>
+				</div>
+				
+			
+				<div data-role="collapsible">
+					<h3>Request List 2</h3>
+						<ul data-role="listview" data-filter="true">
+						
+							<li>
+								<img src="img/def_leopard.jpg" />
+								<h6>Def Leopard</h6>
+								<p>Photograph</p>
+							</li>
+							<li>
+								<img src="img/duran_duran.jpg" />
+								<h6>Duran Duran</h6>
+								<p>Girls On Film</p>
+							</li>
+							<li>
+								<img src="img/gunsnroses.jpg" />
+								<h6>Guns'n'Roses</h6>
+								<p>Welcome To The Jungle</p>
+							</li>
+						</ul>
+				</div>
+				
+				<div data-role="collapsible">
+					<h3>Request List 3</h3>
+						<ul data-role="listview" data-filter="true">
+						
+							<li>
+								<img src="img/harvey.jpg" />
+								<h6>Harvey Danger</h6>
+								<p>Flag Pole Sitta</p>
+							</li>
+							<li>
+								<img src="img/scorpions.jpg" />
+								<h6>Scorpions</h6>
+								<p>Rock You Like A Hurricane</p>
+							</li>
+							<li>
+								<img src="img/steppenwolf.jpg" />
+								<h6>Steppenwolf</h6>
+								<p>Magic Carpet Ride</p>
+							</li>
+						</ul>
+				</div>
+				
+				<div data-role="collapsible">
+					<h3>Request List 4</h3>
+						<ul data-role="listview" data-filter="true">
+						
+							<li>
+								<img src="img/cyndi_lauper.jpg" />
+								<h6>Cyndi Lauper</h6>
+								<p>Girls Just Want To Have Fun</p>
+							</li>
+							<li>
+								<img src="img/toadies.jpg" />
+								<h6>The Toadies</h6>
+								<p>I Come From The Water</p>
+							</li>
+							<li>
+								<img src="img/weatherreport.jpg" />
+								<h6>Weather Report</h6>
+								<p>The Funky Chicken</p>
+							</li>
+						</ul>
+				</div>
+				
+				<div data-role="collapsible">
+					<h3>Request List 5</h3>
+						<ul data-role="listview" data-filter="true">
+						
+							<li>
+								<img src="img/wild_cherry.jpg" />
+								<h6>Wild Cherry</h6>
+								<p>Play That Funky Music</p>
+							</li>
+							<li>
+								<img src="img/duran_duran.jpg" />
+								<h6>Duran Duran</h6>
+								<p>Girls On Film</p>
+							</li>
+							<li>
+								<img src="img/gunsnroses.jpg" />
+								<h6>Guns'n'Roses</h6>
+								<p>Welcome To The Jungle</p>
+							</li>
+						</ul>
+				</div>
+				
+				<div data-role="collapsible">
+					<h3>Request List 6</h3>
+						<ul data-role="listview" data-filter="true">
+						
+							<li>
+								<img src="img/def_leopard.jpg" />
+								<h6>Def Leopard</h6>
+								<p>Photograph</p>
+							</li>
+							<li>
+								<img src="img/duran_duran.jpg" />
+								<h6>Duran Duran</h6>
+								<p>Girls On Film</p>
+							</li>
+							<li>
+								<img src="img/gunsnroses.jpg" />
+								<h6>Guns'n'Roses</h6>
+								<p>Welcome To The Jungle</p>
+							</li>
+						</ul>
+						<div data-role="popup" id="send" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px;">
+							<h3>Send Request?</h3>
+							<p>A message containing your request will be sent to the band.</p>
+							<a href="#requestSent" data-role="button" data-rel="back" data-theme="b" data-icon="check" data-inline="true" data-mini="true">Send</a>
+							<a href="#requestList" data-role="button" data-rel="back" data-inline="true" data-mini="true">Cancel</a>	
+						</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+		
+		
+		<div data-role="footer" data-position="fixed" data-theme="a" data-id="footerNav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" Data-ajax="false">Add Song</a></li>
+					<li><a href="#learn" data-transition="slideup">Learn</a></li>
+					<li><a href="#search" data-transition="slideup">Search</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!--footer-->
+	</div>	
+	
+	<!--Genres Page -->
+	
+	<div data-role="page" id="songGenres" data-add-back-btn="true" data-theme="a">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Genres</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
+		</div>
+		
+		<div data-role="content">
+			<p>Songs by Genres here.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="a" data-id="footerNav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" Data-ajax="false">Add Song</a></li>
+					<li><a href="#learn" data-transition="slideup">Learn</a></li>
+					<li><a href="#search" data-transition="slideup">Search</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!--footer-->
+	</div>	
+	
+	<!--Songs Page-->
+	
+	<div data-role="page" id="songs" data-add-back-btn="true" data-theme="a">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Song List</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
+		</div>
+		
+		<div data-role="content">
+			<p>All Songs by title here.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="a" data-id="footerNav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" Data-ajax="false">Add Song</a></li>
+					<li><a href="#learn" data-transition="slideup">Learn</a></li>
+					<li><a href="#search" data-transition="slideup">Search</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!--footer-->
+	</div>	
+	
+	<!--Artists-->
+	
+	<div data-role="page" id="artists" data-add-back-btn="true" data-theme="a">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Artists</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
+		</div>
+		
+		<div data-role="content">
+			<p>All Artists Added Listed Here.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="a" data-id="footerNav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" Data-ajax="false">Add Song</a></li>
+					<li><a href="#learn" data-transition="slideup">Learn</a></li>
+					<li><a href="#search" data-transition="slideup">Search</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!--footer-->
+	</div>	
+	
+	<!--Songs to Learn-->
+	
+	<div data-role="page" id="learn" data-add-back-btn="true" data-theme="a">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Songs To Learn</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
+		</div>
+		
+		<div data-role="content">
+			<p>Songs that need to be learned are listed here with the Learn By Dates.</p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="a" data-id="footerNav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" Data-ajax="false">Add Song</a></li>
+					<li><a href="#learn" data-transition="slideup" class="ui-btn-active ui-state-persist">Learn</a></li>
+					<li><a href="#search" data-transition="slideup">Search</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!--footer-->
+	</div>	
+	
+	<!--Search Page-->
+	
+	<div data-role="page" id="search" data-add-back-btn="true" data-theme="a">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Search</h1>
+			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
+		</div>
+		
+		<div data-role="content">
+			<p>Search and sort by category.</p>
+			<div data-role="controlgroup">
+				<a href="#requestList" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide">Request List</a>
+				<a href="#songGenres" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide">Genres</a>
+				<a href="#songs" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide">Songs</a>
+				<a href="#artists" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide">Artists</a>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" Data-ajax="false">Add Song</a></li>
+					<li><a href="#learn" data-transition="slideup">Learn</a></li>
+					<li><a href="#search" data-transition="slideup" class="ui-btn-active ui-state-persist">Search</a></li>
+				</ul>
+			</div><!-- /navbar-->
+		</div><!--footer-->
+	</div>
+	
+	<!--Info Page-->
+	
+	<div data-role="page" id="info" data-add-back-btn="true" data-theme="a">
+	
+		<div data-role="header">
+			<h1>Info</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<ul data-role="listview">
+				
+				<li>
+					<img src="img/jon.jpg" />
+					<h6>Jonathan Wade</h6>
+					<p>MIU 1208 WK2</p>
+				</li>
+				<li>
+					<h3>Info</h3>
+					<p>Some more information</p>
+				</li>
+				<li>
+					<h3>Info</h3>
+					<p>Even more information</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Request List 1 page -->
+	
+	<div data-role="page" id="request1" data-add-back-btn="true" data-theme="a">
+	
+		<div data-role="header">
+			<h1>Info</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<p>This is where song info will go.</p>
+		</div>
+		
+	<!--Request Send Messaging -->
+	
+	<div data-role="page" id="requestSent" data-add-back-btn="true" data-theme="a">
+	
+		
+		<div data-role="content">
+		
+			<h1>Request Sent!</h1>
+		</div>
+
+
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
