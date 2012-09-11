@@ -185,7 +185,6 @@
 	 	}
  	}
  	
- 	
  	//Make Item Links
  	//Creates the edit and delete links for each stored item when displayed
  	function makeItemLinks(key, linksLi) {
@@ -384,6 +383,5 @@
  	learnByDate.addEventListener("click", toggleMe);
  	var learnByDate2 = getEl("no");
  	learnByDate2.addEventListener("click", toggleMe2);
-
  	
 }); 	
