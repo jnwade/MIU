@@ -16,7 +16,7 @@
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />	
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -33,7 +33,7 @@
 		<div data-role="header" data-position="fixed" data-theme="a">
 			<a href="#search" data-icon="search" data-iconpos="notext" class="ui-btn-left" data-transition="flip">Search</a>
 			<img id="rlimg" src="img/logo.png"/>
-			<a href="#info" data-icon="info" data-iconpos="notext" class="ui-btn-right" data-transition="flip">Info</a>
+			<a href="#additem" data-icon="info" data-iconpos="notext" class="ui-btn-right" data-transition="flip">Info</a>
 		</div>
 		
 		<div data-role="content">
@@ -59,9 +59,10 @@
 	
 	<!--Add Item Page -->
 	
-	<div data-role="page" id="addSong" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="addSong" data-theme="a">
 	
 		<div data-role="header" data-position="fixed" data-theme="a">
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
 			<h1>Add Songs</h1>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>	
@@ -69,11 +70,11 @@
 	
 	<!--Request List Page -->
 	
-	<div data-role="page" id="requestList" data-add-back-btn="true" data-theme="a" class="type-interior">
+	<div data-role="page" id="requestList" data-theme="a" class="type-interior">
 	
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>...</h1>
-			
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
+			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
 		
@@ -257,10 +258,11 @@
 	
 	<!--Genres Page -->
 	
-	<div data-role="page" id="songGenres" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="songGenres" data-theme="a">
 	
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>...</h1>
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
+			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
 		
@@ -299,10 +301,11 @@
 	
 	<!--Songs Page-->
 	
-	<div data-role="page" id="songs" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="songs" data-theme="a">
 	
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>...</h1>
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
+			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
 		
@@ -334,10 +337,11 @@
 	
 	<!--Artists-->
 	
-	<div data-role="page" id="artists" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="artists" data-theme="a">
 	
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>...</h1>
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
+			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
 		
@@ -358,10 +362,11 @@
 	
 	<!--Songs to Learn-->
 	
-	<div data-role="page" id="learn" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="learn" data-theme="a">
 	
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>Songs To Learn</h1>
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
+			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
 		
@@ -382,10 +387,11 @@
 	
 	<!--Search Page-->
 	
-	<div data-role="page" id="search" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="search" data-theme="a">
 	
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>Search</h1>
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
+			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
 		
@@ -530,6 +536,7 @@
 	<div data-role="page" id="info" data-theme="a">
 	
 		<div data-role="header">
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
 			<h1>Info</h1>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flip">Home</a>
 		</div>
@@ -552,9 +559,10 @@
 	
 	<!-- Request List 1 page -->
 	
-	<div data-role="page" id="request1" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="request1" data-theme="a">
 	
 		<div data-role="header">
+		 	<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
 			<h1>Info</h1>
 		</div>
 		
@@ -565,9 +573,10 @@
 	
 	<!-- Request List 2 page -->
 		
-	<div data-role="page" id="request2" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="request2"  data-theme="a">
 	
 		<div data-role="header">
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
 			<h1>Info</h1>
 		</div>
 		
@@ -578,9 +587,10 @@
 	
 	<!-- Request List 3 page -->
 	
-	<div data-role="page" id="request3" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="request3" data-theme="a">
 	
 		<div data-role="header">
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
 			<h1>Info</h1>
 		</div>
 		
@@ -591,9 +601,10 @@
 		
 	<!-- Request List 4 page -->	
 		
-	<div data-role="page" id="request4" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="request4" data-theme="a">
 	
 		<div data-role="header">
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
 			<h1>Info</h1>
 		</div>
 		
@@ -604,9 +615,10 @@
 	
 	<!-- Request List 5 page -->
 	
-	<div data-role="page" id="request5" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="request5" data-theme="a">
 	
 		<div data-role="header">
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
 			<h1>Info</h1>
 		</div>
 		
@@ -617,9 +629,10 @@
 	
 	<!-- Request List 6 page -->
 		
-	<div data-role="page" id="request6" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="request6" data-theme="a">
 	
 		<div data-role="header">
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
 			<h1>Info</h1>
 		</div>
 		
@@ -628,10 +641,13 @@
 		</div>
 	</div>
 	
-	<div data-role="page" id="news" data-add-back-btn="true" data-theme="a">
+	<!-- News -->
+	
+	<div data-role="page" id="news" data-theme="a">
 	
 		<div data-role="header">
-			<h1> </h1>
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
+			<img id="rlimg" src="img/logo.png"/>
 		</div>
 		
 		<div data-role="content">
@@ -665,6 +681,104 @@
 			</ul>
 		</div>
 	</div>
+	
+	<div data-role="page" id="additem" data-theme="a">
+	
+		<div data-role="header">
+			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
+			<img id="newsimg" src="img/addsong.png" />
+			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#">View Lists</a></li>
+					<li><a href="#">Clear All</a></li>
+				</ul>
+			</div><!-- /navbar -->
+
+		</div>
+		
+		<div data-role="content" data-theme="a">
+			<p>* Indicates Required Field</p>
+			<div data-role="fieldcontain">
+			   <select name="select-choice-1" id="select-choice-1">
+			      <option value="standard">*Pick A Genre!</option>
+			      <option value="rush">Disco</option>
+			      <option value="express">Funk</option>
+			      <option value="overnight">Classic</option>
+			      <option value="rush">80s</option>
+			      <option value="express">Hair Metal</option>
+			      <option value="overnight">90s Rock</option>
+			   </select>   
+			</div><!--Close Fieldset -->
+			
+
+		<input type="text" name="artist" id="artist" placeholder="* Artist Name" value=""/>
+        <input type="text" name="song" id="song" placeholder="* Song Title" value=""/>
+        
+        <label for="rating"><strong>Rating:</strong></label>
+        <div data-role="fieldcontain">
+			<input type="range" name="rating" id="rating" value="0" min="0" max="10" data-theme="a" data-track-theme="b" />
+		</div>
+		
+		<div data-role="fieldcontain">
+			<input type="text" name="key" id="key" placeholder="Key Signature" value=""  />
+		</div>
+		
+		<label for="sitIn"><strong>Sit In?</strong></label>
+		<select name="sitIn" id="sitIn" data-role="slider">
+			<option value="No">No</option>
+			<option value="Yes">Yes</option>
+		</select>
+		
+		
+		<div data-role="fieldcontain">
+		    <fieldset data-role="controlgroup" data-type="horizontal" >
+		    	<legend><strong>Need To Learn?</strong></legend>
+		         	<input type="radio" name="needToLearn" id="needToLearn1" value="no" checked="checked" />
+		         	<label for="needToLearn1">No</label>
+		
+		         	<input type="radio" name="needToLearn" id="needToLearn2" value="yes"  />
+		         	<label for="needToLearn2">Yes</label>
+		    </fieldset>
+		</div>
+		<label for="learnBy"><strong>Learn By:</strong></label>
+		<input type="date" id="learnBy" name="learnBy" placeholder="Learn By Date" value="" />
+		
+		
+		
+		
+		
+	
+			
+			
+		
+		
+				
+		
+		
+			
+		<div data-role="fieldcontain">
+			<textarea name="textarea" id="textarea" placeholder="Add Notes Here!"></textarea>
+		</div>
+
+		
+		
+		
+		
+			<div data-role="footer" data-position="fixed" data-theme="a" data-id="footerNav">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="plus" data-theme="b">Add Song</a></li>
+						<li><a href="#" data-icon="minus">Clear Form</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!--footer-->
+
+			
+
+	
+	
 
 
 	<!-- JavaScript under here -->
