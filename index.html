@@ -699,81 +699,82 @@
 		</div>
 		
 		<div data-role="content" data-theme="a">
-			<p>* Indicates Required Field</p>
-			<div data-role="fieldcontain">
-			   <select name="select-choice-1" id="select-choice-1">
-			      <option value="standard">*Pick A Genre!</option>
-			      <option value="rush">Disco</option>
-			      <option value="express">Funk</option>
-			      <option value="overnight">Classic</option>
-			      <option value="rush">80s</option>
-			      <option value="express">Hair Metal</option>
-			      <option value="overnight">90s Rock</option>
-			   </select>   
-			</div><!--Close Fieldset -->
-			
-
-		<input type="text" name="artist" id="artist" placeholder="* Artist Name" value=""/>
-        <input type="text" name="song" id="song" placeholder="* Song Title" value=""/>
-        
-        <label for="rating"><strong>Rating:</strong></label>
-        <div data-role="fieldcontain">
-			<input type="range" name="rating" id="rating" value="0" min="0" max="10" data-theme="a" data-track-theme="b" />
-		</div>
-		
-		<div data-role="fieldcontain">
-			<input type="text" name="key" id="key" placeholder="Key Signature" value=""  />
-		</div>
-		
-		<label for="sitIn"><strong>Sit In?</strong></label>
-		<select name="sitIn" id="sitIn" data-role="slider">
-			<option value="No">No</option>
-			<option value="Yes">Yes</option>
-		</select>
-		
-		
-		<div data-role="fieldcontain">
-		    <fieldset data-role="controlgroup" data-type="horizontal" >
-		    	<legend><strong>Need To Learn?</strong></legend>
-		         	<input type="radio" name="needToLearn" id="needToLearn1" value="no" checked="checked" />
-		         	<label for="needToLearn1">No</label>
-		
-		         	<input type="radio" name="needToLearn" id="needToLearn2" value="yes"  />
-		         	<label for="needToLearn2">Yes</label>
-		    </fieldset>
-		</div>
-		<label for="learnBy"><strong>Learn By:</strong></label>
-		<input type="date" id="learnBy" name="learnBy" placeholder="Learn By Date" value="" />
-		
-		
-		
-		
-		
+			<form action="" method="post" id="additem"
+				<p>* Indicates Required Field</p>
+				<div data-role="fieldcontain">
+				   <select name="genre" id="genre" data-native-menu="false">
+				      <option value="Genre">*Pick A Genre!</option>
+				      <option value="Disco">Disco</option>
+				      <option value="Funk">Funk</option>
+				      <option value="Classic">Classic</option>
+				      <option value="80s">80s</option>
+				      <option value="Hair Metal">Hair Metal</option>
+				      <option value="90s Rock">90s Rock</option>
+				   </select>   
+				</div><!--Close Fieldset -->
+				
 	
+			<input type="text" name="artist" id="artist" placeholder="* Artist Name" value=""/>
+	        <input type="text" name="song" id="song" placeholder="* Song Title" value=""/>
+	        
+	        <label for="rating"><strong>Rating:</strong></label>
+	        <div data-role="fieldcontain">
+				<input type="range" name="rating" id="rating" value="0" min="0" max="10" data-theme="a" data-track-theme="b" />
+			</div>
+			
+			<div data-role="fieldcontain">
+				<input type="text" name="key" id="key" placeholder="Key Signature" value=""  />
+			</div>
+			
+			<label for="sitIn"><strong>Sit In?</strong></label>
+			<select name="sitIn" id="sitIn" data-role="slider">
+				<option value="off">No</option>
+				<option value="on">Yes</option>
+			</select>
 			
 			
-		
+			<div data-role="fieldcontain">
+			    <fieldset data-role="controlgroup" data-type="horizontal" >
+			    	<legend><strong>Need To Learn?</strong></legend>
+			         	<input type="radio" name="needToLearn" id="needToLearn1" value="no" checked="checked" />
+			         	<label for="needToLearn1">No</label>
+			
+			         	<input type="radio" name="needToLearn" id="needToLearn2" value="yes"  />
+			         	<label for="needToLearn2">Yes</label>
+			    </fieldset>
+			</div>
+			<label for="learnBy"><strong>Learn By:</strong></label>
+			<input type="date" id="learnBy" name="learnBy" placeholder="Learn By Date" value="" />
+			
+			
+			
+			
+			
 		
 				
+				
+			
+			
+					
+			
+			
+				
+			<div data-role="fieldcontain">
+				<textarea name="textarea" id="textarea" placeholder="Add Notes Here!"></textarea>
+			</div>
+	
+		
+		
 		
 		
 			
-		<div data-role="fieldcontain">
-			<textarea name="textarea" id="textarea" placeholder="Add Notes Here!"></textarea>
-		</div>
-
-		
-		
-		
-		
-			<div data-role="footer" data-position="fixed" data-theme="a" data-id="footerNav">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#" data-icon="plus" data-theme="b">Add Song</a></li>
-						<li><a href="#" data-icon="minus">Clear Form</a></li>
+						<li><input type="submit" value="Add Song" data-icon="plus" data-theme="b"></li>
+						<li><input type="reset" value="Reset"  data-icon="minus"></li>
 					</ul>
 				</div><!-- /navbar -->
-			</div><!--footer-->
+			
 
 			
 
