@@ -17,6 +17,7 @@ $('#additem').on('pageinit', function(){
 			
 		}
 	});
+
 	
 	//Toggles the date field depending on the "Need to Learn" radio button selection
 	/*
@@ -35,18 +36,18 @@ function toggleMe(){
 	
 //Find Value of selected slider button
 	function getRadioValue(){
-		var radio = document.forms[0].learn;
+		var radio = $("#learn").val();
 			for(var i=0; i<radio.length; i++){
 				if(radio[i].checked){
-					learnValue = radio[i].value;
+					learnValue = radio[i].val();
 			}
 		}
 	}
 	
 	//Find Value of Checkbox
-	function getCheckValue(){
-		if(getEl("sitIn").checked){
-			sitInValue = getEl("sitIn").value;
+	function getSliderValue(){
+		if($("#sitIn").is(":checked")){   
+			sitInValue = "Yes"
 		}else{
 			sitInValue = "No";
 		}
@@ -67,17 +68,17 @@ function toggleMe(){
 		// Gather up all of our form field values and store them in an object.
 		//Object properties contain array with the form label and input value which will allow us to label the data.
 		getRadioValue();
-		getCheckValue();
+		getSliderValue();
 		var item 				= {};
-			item.genres			= ["Genre:", getEl("genres").value];
-			item.songName		= ["Title:", getEl("songName").value];
-			item.artist			= ["Artist:", getEl("artist").value];
-			item.rating			= ["Rating:", getEl("rating").value];
+			item.genres			= ["Genre:", $("#genres").val()];
+			item.songName		= ["Title:", $("#songName").val()];
+			item.artist			= ["Artist:", $("#artist").val()];
+			item.rating			= ["Rating:", $("#rating").val()];
 			item.needToLearn	= ["Need to learn:", learnValue];
-			item.learnBy		= ["Learn By:", getEl("learnBy").value];
+			item.learnBy		= ["Learn By:", $("#learnBy").val()];
 			item.sitIn			= ["Sit In:", sitInValue];
-			item.tip			= ["Tip:", getEl("tip").value];
-			item.notes			= ["Notes:", getEl("notes").value];
+			item.tip			= ["Tip:", $("#tip").val()];
+			item.notes			= ["Notes:", $("#notes").val()];
 		//Save data into Local Storage: Use "Stringify" to convert our objects to strings (Local storage can only store strings
 		localStorage.setItem(id, JSON.stringify(item));
 		alert("Song Saved!"); 		
@@ -96,9 +97,6 @@ var getData = function(){
 
 };
 
-var storeData = function(data){
-	
-}; 
 
 var	deleteItem = function (){
 			
@@ -107,3 +105,10 @@ var	deleteItem = function (){
 var clearLocal = function(){
 
 };
+
+
+//Variable Defaults
+ 	var learnValue,
+ 		sitInValue = "No"
+ 		
+ 	;

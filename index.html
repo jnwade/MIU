@@ -58,17 +58,7 @@
 		</div>
 	</div>
 	
-	<!--Add Item Page -->
-	
-	<div data-role="page" id="addSong" data-theme="a">
-	
-		<div data-role="header" data-position="fixed" data-theme="a">
-			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
-			<h1>Add Songs</h1>
-			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
-		</div>	
-	</div>
-	
+		
 	<!--Request List Page -->
 	
 	<div data-role="page" id="requestList" data-theme="a" class="type-interior">
@@ -266,6 +256,11 @@
 			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
+		<div data-role="navbar">
+				<ul>
+					<li><a href="#requestList" id="viewList">View Lists</a></li>
+				</ul>
+			</div><!-- /navbar -->
 		
 		<div data-role="content">
 			<img id="genresImg" src="img/genres.png"/>
@@ -309,6 +304,11 @@
 			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
+		<div data-role="navbar">
+				<ul>
+					<li><a href="#requestList" id="viewList">View Lists</a></li>
+				</ul>
+			</div><!-- /navbar -->
 		
 		<div data-role="content">
 			<img id="songsImg" src="img/songs.png"/>
@@ -345,6 +345,11 @@
 			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
+		<div data-role="navbar">
+				<ul>
+					<li><a href="#requestList" id="viewList">View Lists</a></li>
+				</ul>
+			</div><!-- /navbar -->
 		
 		<div data-role="content">
 			<img id="genresImg" src="img/artists.png"/>
@@ -370,6 +375,11 @@
 			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
+		<div data-role="navbar">
+				<ul>
+					<li><a href="#requestList" id="viewList">View Lists</a></li>
+				</ul>
+			</div><!-- /navbar -->
 		
 		<div data-role="content">
 			<img id="genresImg" src="img/tolearn.png"/>
@@ -395,6 +405,11 @@
 			<img id="rlimg" src="img/logo.png"/>
 			<a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-transition="flow">Home</a>
 		</div>
+		<div data-role="navbar">
+				<ul>
+					<li><a href="#requestList" id="viewList">View Lists</a></li>
+				</ul>
+			</div><!-- /navbar -->
 		
 		<div data-role="content">
 			<img id="searchimg" src="img/search.png" />
@@ -612,6 +627,11 @@
 			<a href="#home" data-rel="back" data-icon="back" data-iconpos="notext" data-transition="flow">Home</a>
 			<img id="rlimg" src="img/logo.png"/>
 		</div>
+		<div data-role="navbar">
+				<ul>
+					<li><a href="#requestList" id="viewList">View Lists</a></li>
+				</ul>
+			</div><!-- /navbar -->
 		
 		<div data-role="content">
 			<img id="newsimg" src="img/news.png" />
@@ -667,19 +687,18 @@
 			<form action="" method="post" id="mainForm">
 				<p>* Indicates Required Field</p>
 				
-				<div data-role="fieldcontain" class="required">
-				<label for="genre"><strong>Genre:</strong></label>
-				   <select name="genre" id="genre" data-native-menu="false" class="required">
-				      <option data-placeholder="true">Select Genre</option>
+				<div data-role="fieldcontain">
+				   <select name="genre" id="genres">
+				      <option data-placeholder="true">Select Genre:</option>
 				      <option value="Disco">Disco</option>
 				      <option value="Funk">Funk</option>
 				      <option value="Classic">Classic</option>
 				      <option value="80s">80s</option>
 				      <option value="Hair Metal">Hair Metal</option>
 				      <option value="90s Rock">90s Rock</option>
-				   </select>   
+				   </select>
 				</div><!--Close Fieldset -->
-				
+								
 	
 			<input type="text" name="artist" id="artist" placeholder="* Artist Name" class="required" value="" />
 	        <input type="text" name="song" id="songName" placeholder="* Song Title" class="required" value=""/>
